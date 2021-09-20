@@ -1,0 +1,34 @@
+.projectContainer{
+    background-color: rgb(229, 228, 226);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border:2px solid black;
+    align-content: center;
+}
+.header{
+ color:black
+}
+.projectCards{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    width:50vw;
+}
+.projectCards img{
+    height:60vh;
+    width:50vw;
+}
+.projectCards h3{
+    font-size:3vw;
+}
+.projectInfo{
+    font-size:2vw;
+    padding:3vh 1vw;
+}
+.title{
+    font-size:4vw;
+    font-family: 'Source Serif Pro', serif;
+}

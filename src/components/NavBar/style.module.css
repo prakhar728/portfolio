@@ -1,0 +1,49 @@
+.Header{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    height:10vh;
+}
+
+.navBar{
+    height:10vh;
+    max-height: max-content;
+    margin:-6px;
+    margin-bottom: -8px;
+    position: fixed;
+    width:100%;
+}
+.navBar{
+list-style-type: none;
+display: flex;
+flex-direction: row;
+align-items: center;
+background-color: 	#673147ed;
+justify-content: space-around;
+
+}
+.navBar li{
+    width: 60%;
+    text-align: center;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+@keyframes fadeIn {
+    from{background-color:rgba(255, 255, 255, 0);}
+    to{background-color:#673147ed ;}
+}
+.navBar li:hover{
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+cursor: pointer;
+}
+
+.navBar a{
+    text-decoration: none;
+    color:black;
+    font-size: 1.5vw;
+    border-bottom:2px solid black;
+}
