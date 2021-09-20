@@ -13,20 +13,39 @@
 .projectCards{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-content: center;
     align-items: center;
-    width:50vw;
+    width:30vw;
+    border-radius: 10px;  
+    background-color: rgba(0, 0, 0, 0.178);
+    padding:2px;
+    margin:3vw;
+}
+.projectCardContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    height: max-content;
 }
 .projectCards img{
-    height:60vh;
-    width:50vw;
+    height:40vh;
+    width:30vw;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    margin: 0;
+    padding:0;
 }
 .projectCards h3{
-    font-size:3vw;
+    padding-top: 10px;
+    margin: 0;
+    font-size:1vw;
 }
 .projectInfo{
-    font-size:2vw;
-    padding:3vh 1vw;
+    padding:2px 0;
+    font-size:1.2vw;
+    text-align: center;
 }
 .title{
     font-size:4vw;
