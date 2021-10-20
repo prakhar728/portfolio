@@ -3,7 +3,7 @@ import styles from './About.module.css';
 import ill from '../public/illustration2.svg';
 const About = () => {
     return (
-        <div className={styles.first}>
+        <div className={styles.first} id="about">
            
             <div className={styles.image}>
                 <img src={ill} alt="Illustration" />

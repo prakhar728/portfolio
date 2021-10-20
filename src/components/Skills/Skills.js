@@ -6,11 +6,12 @@ import icons3 from '../public/ICONS/HTML5.png'
 import icons4 from '../public/ICONS/NODEJS.png'
 import icons5 from '../public/ICONS/MONGODB.png'
 import icons6 from '../public/ICONS/JAVASCRIPT.png'
-
+import icons7 from '../public/ICONS/Github.png'
+import icons8 from '../public/ICONS/SQL.png'
 
 const Skills = () => {
     return (
-        <div className={styles.Skills}>
+        <div className={styles.Skills} id="skills">
             <h1 className={styles.heading}>SKILLS</h1>
             <div className={styles.icon}>
                 <img src={icons1} alt="C++" />
@@ -19,6 +20,8 @@ const Skills = () => {
                 <img src={icons4} alt="NODEJS" />
                 <img src={icons5} alt="MONGODB" />
                 <img src={icons6} alt="JAVASCRIPT" />
+                <img src={icons7} alt="GITHUB" />
+                <img src={icons8} alt="SQL" />
             </div>
         </div>
     )

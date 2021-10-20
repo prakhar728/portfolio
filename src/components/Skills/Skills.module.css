@@ -17,6 +17,9 @@
     justify-content: space-evenly;
     width:70vw;
 }
+.icon img{
+    height:15vh;
+}
 .heading{
     font-size:4vw;
     font-family: 'Source Serif Pro', serif;

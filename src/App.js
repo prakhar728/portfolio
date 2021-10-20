@@ -5,6 +5,7 @@ import Home from './components/HOME/Home';
 import styles from './app.module.css'
 import Skills from './components/Skills/Skills';
 import Projects from './components/Projects/Projects';
+import Contact from './components/ContactMe/Contact';
 function App() {
   return (
     <div className={styles.mainContainer}>
@@ -13,6 +14,7 @@ function App() {
     <About />
     <Skills />
     <Projects />
+    <Contact />
     <Footer />
     </div>
   );

@@ -4,7 +4,7 @@ import styles from './home.module.css';
 import img1 from '../public/IMG3.jpg';
 const Home = () => {
     return (
-        <div className={styles.homeContainer}>
+        <div className={styles.homeContainer} id="home">
             <div className={styles.someInfoContainer}>
                 <div className={styles.Name}>
                     Prakhar Ojha
