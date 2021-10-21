@@ -1,49 +1,74 @@
-.Header{
+.Header {
     padding: 0;
-    margin:0;
+    margin: 0;
     box-sizing: border-box;
-    height:10vh;
+    width: 100vw;
+    height: 9.9vh;
 }
-
-.navBar{
-    height:10vh;
-    max-height: max-content;
-    margin:-6px;
-    margin-bottom: -8px;
+.navBar {
+    height: 10vh;
     position: fixed;
-    width:100%;
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #673147ed;
+    justify-content: space-evenly;
 }
-.navBar{
-list-style-type: none;
-display: flex;
-flex-direction: row;
-align-items: center;
-background-color: 	#673147ed;
-justify-content: space-around;
 
-}
-.navBar li{
-    width: 60%;
+.navBar li {
     text-align: center;
-    height:100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    }
-@keyframes fadeIn {
-    from{background-color:rgba(255, 255, 255, 0);}
-    to{background-color:#673147ed ;}
 }
-.navBar li:hover{
+
+@keyframes fadeIn {
+    from {
+        background-color: rgba(255, 255, 255, 0);
+    }
+    to {
+        background-color: #673147ed;
+    }
+}
+
+.navBar li:hover {
     animation-name: fadeIn;
     animation-duration: 1s;
     animation-fill-mode: forwards;
-cursor: pointer;
+    cursor: pointer;
 }
 
-.navBar a{
+.navBar a {
     text-decoration: none;
-    color:black;
+    color: black;
     font-size: 1.5vw;
-    border-bottom:2px solid black;
+    border-bottom: 2px solid black;
+}
+
+@keyframes dropDown {
+    0% {
+        padding: 0
+    }
+    50% {
+        padding-bottom: 5px;
+    }
+    100% {
+        padding: 0;
+    }
+}
+
+.navBar a:hover {
+    animation-name: dropDown;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+}
+@media screen and (max-width: 500px) {
+    .Header{
+        display: none;
+    }
 }

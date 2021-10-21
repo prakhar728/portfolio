@@ -1,4 +1,4 @@
-.projectContainer{
+.projectContainer {
     background-color: rgb(229, 228, 226);
     display: flex;
     flex-direction: column;
@@ -6,45 +6,61 @@
     align-items: center;
     align-content: center;
 }
-.header{
- color:black
+
+.header {
+    color:white;
+
 }
-.projectCards{
+
+.projectCardContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: max-content;
+}
+
+.projectCards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80vw;
+    background-color: #333;
+    padding: 2px;
+    margin: 3vw;
+    color:white;
+}
+.projectCards img {
+    width: 50vw;
+    height:auto;
+    margin: 0;
+    align-self: flex-start;
+}
+
+.projectCards h3 {
+    padding-top: 10px;
+    margin: 0;
+    font-size: 20px;
+    text-align: center;
+}
+
+.projectCards h3 a {
+    color:white;
+    text-decoration: none;
+}
+
+.projectInfo {
+    font-size: 1.2vw;
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    align-items: center;
-    width:25vw;
-    height:fit-content;
-    background-color: rgba(0, 0, 0, 0.178);
-    padding:2px;
-    margin:3vw;
+    height:80%;
+    padding: 10px;
 }
-.projectCardContainer{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    height: max-content;
-}
-.projectCards img{
-    width: 100%;
-   
-    margin: 0;
-    padding:5px;
-}
-.projectCards h3{
-    padding-top: 10px;
-    margin: 0;
-    font-size:1vw;
-}
-.projectInfo{
-    padding:2px 0;
-    font-size:1.2vw;
-    text-align: center;
-}
-.title{
-    font-size:4vw;
+
+.title {
+    font-size: 4vw;
     font-family: 'Source Serif Pro', serif;
+    -webkit-text-stroke: 0.5px black;
 }

@@ -1,0 +1,54 @@
+h2{
+    text-align: center;
+    font-size: 40px;
+}
+
+form {
+    min-width: 300px;
+    width: 100%;
+    max-width: 600px;
+    margin: 48px auto;
+}
+form div.input_container {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 3fr 7fr;
+    grid-gap: none;
+    justify-content: center;
+    align-items: center;
+    margin: 24px 0;
+}
+form div label {
+    text-align: left;
+    font-size: 24px;
+}
+form div input,
+form div textarea {
+    width: 100%;
+    border: 1px solid #333;
+    background: transparent;
+    color: black;
+    padding: 16px 24px;
+    font-size: 24px;
+}
+form .btn_container {
+    text-align: center;
+    display: block;
+    padding: 24px 0;
+    margin: 24px auto;
+}
+form .btn_container button {
+    font-size: 24px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 16px 24px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+form .btn_container button:hover {
+    background-color: white;
+    color: black;
+    transition: all 0.35s ease-out;
+}

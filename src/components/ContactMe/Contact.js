@@ -1,24 +1,27 @@
 import React from 'react'
-
+import styles from './Contact.module.css';
 function Contact() {
     return (
-        <div>
-            <form name="contact" method="POST" data-netlify="true">
-                <p>
-                    <label>Your Name: <input type="text" name="name" /></label>
-                </p>
-                <p>
-                    <label>Your Email: <input type="email" name="email" /></label>
-                </p>
-                <p>
-                    <label>Message: <textarea name="message"></textarea></label>
-                </p>
-                <p>
-                    <button type="submit">Send</button>
-                </p>
+        <>
+            <h2 id="contact">CONTACT ME</h2>
+            <form action="">
+                <div className={styles.input_container}>
+                    <div><label>Name</label></div>
+                    <div><input type="text" /></div>
+                </div>
+                <div className={styles.input_container}>
+                    <div><label>Email</label></div>
+                    <div><input type="text" /></div>
+                </div>
+                <div className={styles.input_container}>
+                    <div><label>Message</label></div>
+                    <div><textarea cols="5"></textarea></div>
+                </div>
+                <div className={styles.btn_container}>
+                    <button type="submit">SUBMIT</button>
+                </div>
             </form>
-
-        </div>
+        </>
     )
 }
 
