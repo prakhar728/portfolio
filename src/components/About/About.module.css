@@ -20,3 +20,12 @@
     height:25vw;
     background-color: #6731478e;
 }
+@media screen and (max-width:500px) {
+    .image{
+        display: none;
+    }
+    .text{
+        font-size:5vw;
+        width: 90vw;
+    }
+}

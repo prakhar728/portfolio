@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './Contact.module.css';
 function Contact() {
     return (
-        <>
+        <div className={styles.form_container}>
             <h2 id="contact">CONTACT ME</h2>
             <form action="">
                 <div className={styles.input_container}>
@@ -21,7 +21,7 @@ function Contact() {
                     <button type="submit">SUBMIT</button>
                 </div>
             </form>
-        </>
+        </div>
     )
 }
 

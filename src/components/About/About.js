@@ -8,8 +8,10 @@ const About = () => {
             <div className={styles.image}>
                 <img src={ill} alt="Illustration" />
             </div>
-            <div className={styles.text}> I am a Second year student at Indian Institute of Information Technology, Surat. Currently persuing my bachelors in Electronics and communication engineering.<br />
-            I am a BackEnd developer and hgihly interested in Blochain Development. I listen to music.</div>
+            <div className={styles.text}> I am a Second year student at Indian Institute of Information Technology, Surat.
+            <br /> Currently persuing my bachelors in Electronics and communication engineering.<br />
+            <br />
+            I am a BackEnd developer and highly interested in Blochain Development. I listen to music.</div>
         </div>
     )
 }

@@ -29,7 +29,7 @@ const Home = () => {
                     I am a BackEnd Developer trying to learn Blockchain
                 </div>
             </div>
-            <div>
+            <div className={styles.imageContainer}>
                 <img src={img1} alt="ProfilePicture" className={styles.pfp} />
             </div>
         </div>

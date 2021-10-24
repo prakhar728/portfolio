@@ -24,3 +24,19 @@
     font-size:4vw;
     font-family: 'Source Serif Pro', serif;
 }
+
+@media screen and (max-width:500px) {
+    .heading{
+        font-size: 10vw;
+    }
+    .icon{
+        width: 90vw;
+        height: fit-content;
+        flex-wrap: wrap;
+    }
+    .icon img{
+        height:20vw;
+        padding-left:1vw;
+        padding-right: 1vw;
+    }
+}
