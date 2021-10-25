@@ -9,7 +9,7 @@ const Projects = () => {
                 <h1 className={styles.title}>PROJECTS</h1>
             </div>
             <div className={styles.projectCardContainer}>
-                <div className={styles.projectCards}>
+                {/* <div className={styles.projectCards}>
                     <img src={proj1} alt="Project1" />
                     <div>
                         <h3> <a href="https://floating-sands-23365.herokuapp.com/" >CRYPTO WALLET</a></h3>
@@ -18,10 +18,9 @@ const Projects = () => {
                         </div>
                     </div>
 
-                </div>
+                </div> */}
                 <div className={styles.projectCards}>
-                    <img src={proj2} alt="Project1" />
-                    <div>
+                    <div className={styles.cardContainer}>
                         <h3> <a href="https://github.com/prakhar728/CrimeAwarenessBot" >CRIME AWARENESS BOT</a></h3>
                         <div className={styles.projectInfo}>
                             Report any crime on the go with
@@ -29,7 +28,7 @@ const Projects = () => {
                         </div>
                     </div>
                 </div>
-                <div className={styles.projectCards}>
+                {/* <div className={styles.projectCards}>
                     <img src={proj1} alt="Project1" />
                     <div>
                         <h3> SOS_Web App </h3>
@@ -37,7 +36,7 @@ const Projects = () => {
                             This project was made so that it can be cloned and used at it is without worrying about adding external auth.
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
 
         </div>
