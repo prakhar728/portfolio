@@ -3,6 +3,7 @@
     color:white;
     font-family: 'Source Serif Pro', serif;
     -webkit-text-stroke: 0.5px black;
+    padding: 56px 0 48px 0;
 }
 
 .projectContainer {
@@ -15,58 +16,82 @@
     align-content: center;
 }
 
-
-
 .projectCardContainer {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    height: max-content;
+    height: 60vh;
     border:2px solid black;
     width:100%;
     padding: 64px 0;
+    position: relative;
 }
-
-.projectCards {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 30vw;
+.projectCard{
+    width:30vw;
     height:45vh;
-    border:2px dashed black;
-    color:white;
+    position: absolute;
+    /* background: url('../public/Crime_Awareness_Bot.png');
+    background-size: cover;
+    background-repeat: no-repeat; */
 }
-
-.cardContainer{
+.projectCard h3{
+    width:100%;
+    text-align: center;
+    margin-top:20px;   
+    opacity: 0;
+    transition: all 1s ease-in; 
+}
+.projectCard a{
+    color:blue;
+    text-decoration: none;
+    width:100%;
+    margin-top:20px;
+    font-size: 24px;
+    position: relative;
+}
+.projectCard p{
+    margin:0 10px;
+    margin-top:40px;
+    text-align: center;
+    font-size:1.5vw;
+    position: relative;
+    display: none;
+}
+.imageofCard{
     width:100%;
     height:100%;
-    background:url('../public/Crime_Awareness_Bot2.png') ;
-    background-size: contain;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+    position:absolute;
+    z-index: 0;
+    filter:blur(0);
 }
-.cardContainer h3{
-    text-align: center;
-    padding:12px 0;
+@keyframes textFadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
-.cardContainer a{
-    color:black;
-    text-decoration: none;
-    display: none;
-
-}
-.projectInfo{
-    color:black;
-    text-align: center;
-    padding:0 4px;
-    margin:10vh 0;
-    display: none;
+@keyframes imgFadeOut {
+    from{
+        filter:blur(0);
+    }
+    to{
+        filter:blur(15px);
+    }
 }
 
 
+.projectCard:hover  img{
+    animation-name: imgFadeOut;
+    animation-timing-function: ease-in;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+.projectCard:hover h3{
+    opacity: 1;
+   
+} 
 
 @media screen and (max-width:500px) {
     .title{
@@ -101,4 +126,3 @@
         display: none;
     }
 }
-

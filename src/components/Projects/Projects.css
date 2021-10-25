@@ -1,0 +1,200 @@
+/* ---------- New Card ---------- */
+
+.ProjectCard {
+    height: 400px;
+    width: 800px;
+    border: 1px solid #000;
+    margin: 36px;
+}
+.ProjectCard .ProjectCard__Button {
+    position: relative;
+    top: 0;
+    right: 0;
+    margin-left: auto;
+    padding: 16px;
+    border-radius: 0 0 0 50px;
+    background-color: #fff;
+    color: #333;
+    height: 72px;
+    width: 72px;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+.ProjectCard .ProjectCard__Button button {
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 24px;
+}
+.ProjectCard .ProjectCard__Button button i {
+    transform: rotate(-135deg);
+}
+
+.ProjectCard .ProjectCard__Image {
+    position: relative;
+    top: -72px;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.ProjectCard .ProjectCard__Image__Blur {
+    filter: blur(15px) opacity(0.5);
+    transition: all 0.35s ease-in;
+
+}
+.ProjectCard .ProjectCard__Info {
+    display: none;
+}
+.ProjectCard .ProjectCard__Info__Show {
+    display: block;
+    position: relative;
+    top: -400px;
+    left: 0;
+    padding: 24px;
+}
+.ProjectCard .ProjectCard__Info h3 {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    padding: 24px 0;
+}
+.ProjectCard .ProjectCard__Info p {
+    font-size: 24px;
+    text-align: left;
+}
+
+#ProjectCard__Image1 {
+    background-image: url("../public/Crime_Awareness_Bot2.png");
+}
+#ProjectCard__Image2 {
+    background-image: url("../public/Crime_Awareness_Bot2.png");
+}
+#ProjectCard__Image3 {
+    background-image: url("../public/Crime_Awareness_Bot2.png");
+}
+#ProjectCard__Image4 {
+    background-image: url("../public/Crime_Awareness_Bot2.png");
+}
+
+@media (max-width: 850px) {
+    .ProjectCard {
+        height: 460px;
+        width: 700px;
+    }
+}
+@media (max-width: 720px) {
+    .ProjectCard {
+        height: 400px;
+        width: 600px;
+    }
+}
+@media (max-width: 640px) {
+    .ProjectCard {
+        height: 320px;
+        width: 480px;
+    }
+    .ProjectCard .ProjectCard__Button {
+        height: 64px;
+        width: 64px;
+    }
+    .ProjectCard .ProjectCard__Button button {
+        font-size: 20px;
+    }
+    .ProjectCard .ProjectCard__Info__Show {
+        top: -360px;
+    }
+    .ProjectCard .ProjectCard__Info h3 {
+        font-size: 30px;
+        padding: 24px 0;
+    }
+    .ProjectCard .ProjectCard__Info p {
+        font-size: 20px;
+    }
+    .ProjectCard .ProjectCard__Image {
+        top: -64px;
+    }
+}
+@media (max-width: 520px) {
+    .ProjectCard {
+        height: 265px;
+        width: 400px;
+    }
+    .ProjectCard .ProjectCard__Button {
+        height: 56px;
+        width: 56px;
+    }
+    .ProjectCard .ProjectCard__Button button {
+        font-size: 18px;
+    }
+    .ProjectCard .ProjectCard__Info__Show {
+        top: -300px;
+    }
+    .ProjectCard .ProjectCard__Info h3 {
+        font-size: 26px;
+        padding: 20px 0;
+    }
+    .ProjectCard .ProjectCard__Info p {
+        font-size: 18px;
+    }
+    .ProjectCard .ProjectCard__Image {
+        top: -56px;
+    }
+}
+@media (max-width: 420px) {
+    .ProjectCard {
+        height: 210px;
+        width: 315px;
+    }
+    .ProjectCard .ProjectCard__Button {
+        height: 48px;
+        width: 48px;
+    }
+    .ProjectCard .ProjectCard__Button button {
+        font-size: 18px;
+    }
+    .ProjectCard .ProjectCard__Info__Show {
+        top: -240px;
+    }
+    .ProjectCard .ProjectCard__Info h3 {
+        font-size: 24px;
+        padding: 16px 0;
+    }
+    .ProjectCard .ProjectCard__Info p {
+        font-size: 16px;
+    }
+    .ProjectCard .ProjectCard__Image {
+        top: -48px;
+    }
+}
+@media (max-width: 325px) {
+    .ProjectCard {
+        height: 160px;
+        width: 240px;
+    }
+    .ProjectCard .ProjectCard__Button {
+        height: 42px;
+        width: 42px;
+    }
+    .ProjectCard .ProjectCard__Button button {
+        font-size: 16px;
+    }
+    .ProjectCard .ProjectCard__Info__Show {
+        top: -200px;
+    }
+    .ProjectCard .ProjectCard__Info h3 {
+        font-size: 24px;
+        padding: 16px 0;
+    }
+    .ProjectCard .ProjectCard__Info p {
+        font-size: 16px;
+    }
+    .ProjectCard .ProjectCard__Image {
+        top: -42px;
+    }
+}

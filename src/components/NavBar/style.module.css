@@ -4,6 +4,8 @@
     box-sizing: border-box;
     width: 100vw;
     height: 9.9vh;
+    position: absolute;
+    z-index: 9;
 }
 .navBar {
     height: 10vh;
