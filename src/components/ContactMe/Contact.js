@@ -4,7 +4,8 @@ function Contact() {
     return (
         <div className={styles.form_container}>
             <h2 id="contact">CONTACT ME</h2>
-            <form name="contact" method="POST" data-netlify="true" onSubmit="submit">
+            <form name="contact" method="POST" Content-type="application/x-www-form-urlencoded" data-netlify="true" onSubmit="submit">
+            <input type="hidden" name="contact" value="contact" />
                 <div className={styles.input_container}>
                     <div><label>Name</label></div>
                     <div><input type="text" name="Name"/></div>
