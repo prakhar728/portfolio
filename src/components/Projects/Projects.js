@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './Projects.module.css';
-import proj1 from '../public/Crypto_Wallet.png';
-import proj2 from '../public/Crime_Awareness_Bot2.png';
+// import proj1 from '../public/Crypto_Wallet.png';
+// import proj2 from '../public/Crime_Awareness_Bot2.png';
 const Projects = () => {
     return (
         <div className={styles.projectContainer} id="projects">
