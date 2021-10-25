@@ -14,21 +14,9 @@ const Projects = () => {
                 <h1 className={styles.title}>PROJECTS</h1>
             </div>
 
-            {/* <div className="ProjectCard">
-                <div className="ProjectCard__Button">
-                    <button onClick={handleCardOpenClose}><i className={buttonIcon}></i></button>
-                </div>
-                <div id="ProjectCard__Image" className="ProjectCard__Image"></div>
-                <div id="ProjectCard__Info" className="ProjectCard__Info">
-                    <h3><a href="https://www.youtube.com">SOS_Web App</a></h3>
-                    <p>This project was made so that it can be cloned and used at it is without worrying about adding external auth.</p>
-                </div>
-            </div> */}
-
-            <ProjectCardTemplate title="njdiwob" description="vbw9bvdbsdbddw" id="1"/>
-            <ProjectCardTemplate title="" descripttion="" link="" imageURL="" id="2"/>
-            <ProjectCardTemplate title="" descripttion="" link="" imageURL="" id="3"/>
-            <ProjectCardTemplate title="" descripttion="" link="" imageURL="" id="4"/>
+            <ProjectCardTemplate title="Crypto Wallet" description="Store all your transactions and make your own portfolio. This web app stores your previous transactions and helps keep track of your 'invested' amount. " id="1"/>
+            <ProjectCardTemplate title="CrimeAwarenessBot" description="Report any crime to the concerened authorities immediately. Make your neighbourhood safe with the CrimeAwarenessBot" id="2"/>
+            <ProjectCardTemplate title="Mind Space" description="Solve the problems that botehr you! Post them and everyone will solve them. Too embarrassed or too shy? Be anonymous " id="3"/>
             
         </div>
     )

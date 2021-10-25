@@ -70,17 +70,15 @@
 }
 
 #ProjectCard__Image1 {
-    background-image: url("../public/Crime_Awareness_Bot2.png");
+    background-image: url("../public/CryptoWallet.png");
 }
 #ProjectCard__Image2 {
-    background-image: url("../public/Crime_Awareness_Bot2.png");
+    background-image: url("../public/CrimeAwarenessBot.png");
 }
-#ProjectCard__Image3 {
-    background-image: url("../public/Crime_Awareness_Bot2.png");
-}
-#ProjectCard__Image4 {
-    background-image: url("../public/Crime_Awareness_Bot2.png");
-}
+ #ProjectCard__Image3 {
+    background-image: url("../public/MindSpace.png");
+} 
+
 
 @media (max-width: 850px) {
     .ProjectCard {
