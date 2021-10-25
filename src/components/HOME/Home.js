@@ -1,7 +1,7 @@
 import React from 'react'
 import TypewriterComponent from 'typewriter-effect';
 import styles from './home.module.css';
-import img1 from '../public/IMG3.jpg';
+import img1 from '../public/IMG3.webp';
 const Home = () => {
     return (
         <div className={styles.homeContainer} id="home">

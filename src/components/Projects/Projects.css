@@ -70,13 +70,13 @@
 }
 
 #ProjectCard__Image1 {
-    background-image: url("../public/CryptoWallet.png");
+    background-image: url("../public/CryptoWallet.webp");
 }
 #ProjectCard__Image2 {
-    background-image: url("../public/CrimeAwarenessBot.png");
+    background-image: url("../public/CrimeAwarenessBot.webp");
 }
  #ProjectCard__Image3 {
-    background-image: url("../public/MindSpace.png");
+    background-image: url("../public/MindSpace.webp");
 } 
 
 
