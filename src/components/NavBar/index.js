@@ -17,13 +17,13 @@ const index = () => {
                         </Link>
                     </li>
                     <li>
-                        <Link activeClass="active" to="projects" spy={true} smooth={true} duration={1000}>
-                        PROJECTS
+                        <Link activeClass="active" to="skills" spy={true} smooth={true} duration={1000}>
+                        SKILLS
                         </Link>
                     </li>
                     <li>
-                        <Link activeClass="active" to="skills" spy={true} smooth={true} duration={1000}>
-                        SKILLS
+                        <Link activeClass="active" to="projects" spy={true} smooth={true} duration={1000}>
+                        PROJECTS
                         </Link>
                     </li>
                     <li>
