@@ -27,9 +27,13 @@ const index = () => {
                         </Link>
                     </li>
                     <li>
-                        <Link activeClass="active" to="contact" spy={true} smooth={true} duration={1000}>
+                        {/* <Link activeClass="active" to="contact" spy={true} smooth={true} duration={1000}>
                         CONNECT WITH ME
-                        </Link>
+                        </Link> */}
+                        <a  href="mailto:prakharojha12@gmail.com"  smooth={true} duration={1000}>
+                        CONNECT WITH ME
+                        </a>
+                        
                     </li>
                 </ul>
             </header>
