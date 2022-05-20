@@ -1,71 +1,71 @@
 const header = {
   // all the properties are optional - can be left empty or deleted
-  homepage: 'https://rajshekhar26.github.io/cleanfolio',
-  title: 'JS.',
+  homepage: 'https://prakhar728.github.io/portfolio',
+  title: 'PO.',
 }
 
 const about = {
   // all the properties are optional - can be left empty or deleted
-  name: 'John Smith',
-  role: 'Front End Engineer',
+  name: 'Prakhar Ojha',
+  role: 'Blockchain/Backend Developer',
   description:
-    'Adipisicing sit fugit ullam unde aliquid sequi Facilis soluta facilis perspiciatis corporis nulla aspernatur. Autem eligendi rerum delectus modi quisquam? Illo ut quasi nemo ipsa cumque perspiciatis! Maiores minima consectetur.',
-  resume: 'https://example.com',
+    'Currently a Sophomore at IIIT Surat. I plan to build a career in Blockchain Development and explore the opportunities in the field. ',
+  resume: 'https://drive.google.com/file/d/1HqVcXZegvMoT9qsvvkrUOhBN2bxubho7/view?usp=sharing',
   social: {
-    linkedin: 'https://linkedin.com',
-    github: 'https://github.com',
+    linkedin: 'https://www.linkedin.com/in/prakhar-ojha/',
+    github: 'https://github.com/prakhar728',
   },
 }
 
 const projects = [
-  // projects can be added an removed
-  // if there are no projects, Projects section won't show up
+ 
   {
-    name: 'Project 1',
+    name: 'Daan',
     description:
-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
-    stack: ['SASS', 'TypeScript', 'React'],
-    sourceCode: 'https://github.com',
-    livePreview: 'https://github.com',
+      'Imagine a Donation Website where not only you could donate without a middlemen but get rewarded for it!',
+    stack: ['ReactJs', 'Solidity','Javascript'],
+    sourceCode: 'https://github.com/prakhar728/YoFlakes_Daan',
+    livePreview: 'https://devfolio.co/projects/daan-50ea',
   },
   {
-    name: 'Project 2',
+    name: 'De-Lock Crypto Wallet',
     description:
-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
-    stack: ['SASS', 'TypeScript', 'React'],
-    sourceCode: 'https://github.com',
-    livePreview: 'https://github.com',
+      'Learning Project aimed to understand Token deployment, transfer and Blockchain development',
+    stack: ['Solidity', 'Javascript', 'React','Truffle'],
+    sourceCode: 'https://github.com/prakhar728/Grunters-DevHeat-2021',
+    livePreview: 'https://youtu.be/QHXZJbxrzPc',
   },
   {
-    name: 'Project 3',
+    name: 'CerTube',
     description:
-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
+      'Get Certified to watch Youtube Playlist. Spending Hours of time watching palylists but no certificate to prove it\'s worth ? We got you covered.',
     stack: ['SASS', 'TypeScript', 'React'],
-    sourceCode: 'https://github.com',
-    livePreview: 'https://github.com',
+    sourceCode: 'https://github.com/prakhar728/CerTube_Yoflake',
+    livePreview: 'https://devpost.com/software/certube',
   },
 ]
 
 const skills = [
-  // skills can be added or removed
-  // if there are no skills, Skills section won't show up
-  'HTML',
-  'CSS',
   'JavaScript',
   'TypeScript',
   'React',
   'Redux',
-  'SASS',
+  'Solidity',
   'Material UI',
   'Git',
   'CI/CD',
-  'Jest',
-  'Enzyme',
+  'Express',
+  'Nodejs',
+  'Chai.js',
+  'PostgreSQL',
+  'MongoDB',
+  'Firebase',
+  'Operating Sytem',
+  'DBMS'
 ]
 
 const contact = {
-  // email is optional - if left empty Contact section won't show up
-  email: 'johnsmith@mail.com',
+  email: 'prakharojha12@gmail.com',
 }
 
 export { header, about, projects, skills, contact }

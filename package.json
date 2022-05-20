@@ -1,8 +1,8 @@
 {
-  "name": "cleanfolio",
+  "name": "personal_portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://rajshekhar26.github.io/cleanfolio",
+  "homepage": "https://prakhar728.github.io/portfolio",
   "dependencies": {
     "@material-ui/core": "^4.12.3",
     "@material-ui/icons": "^4.11.2",
@@ -18,10 +18,10 @@
     "web-vitals": "^2.1.0"
   },
   "scripts": {
-    "start": "react-scripts --openssl-legacy-provider start",
-    "build": "react-scripts --openssl-legacy-provider build",
-    "test": "react-scripts --openssl-legacy-provider test",
-    "eject": "react-scripts --openssl-legacy-provider eject",
+    "start": "react-scripts  start",
+    "build": "react-scripts  build",
+    "test": "react-scripts  test",
+    "eject": "react-scripts  eject",
     "lint": "eslint .",
     "format": "prettier --write \"**/*.+(js|jsx|json|css|md)\"",
     "deploy": "gh-pages -d build"
