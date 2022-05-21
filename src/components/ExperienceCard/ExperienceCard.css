@@ -1,0 +1,40 @@
+.cardWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width:30vw;
+    row-gap: 30px;
+    box-shadow: var(--shadow);
+    transition: transform 0.2s linear;
+  padding: 2em;
+}
+.cardWrapper:hover {
+    transform: translateY(-7px);
+  }
+.jobTitle{
+    font-size:1.5rem;
+}
+.details{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width:100%;
+    font-size: 1.2rem;
+}
+.jobDates{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between  ;
+}
+.purpose{
+    width:100%;
+}
+.purpose ul{
+        width:95%;
+    margin: auto;
+    padding-left: 10px;
+    list-style-type: circle;
+}

@@ -68,4 +68,30 @@ const contact = {
   email: 'prakharojha12@gmail.com',
 }
 
-export { header, about, projects, skills, contact }
+const Experiences =
+  [
+    {
+      Title:'ReactJs Developer',
+      CName:'Yehlo Solutions',
+      SD:'Dec \' 21',
+      ED:'Dec \' 21',
+      purposeList:[
+        'Worked as a Freelance developer on ReactJs',
+        'Used Material UI to conver Adobe Design into working React',
+        'Used React-Redux to make a working Store'
+      ]
+    },
+    {
+      Title:'Blockchain Intern',
+      CName:'GetStan Tech Pvt Ltd',
+      SD:'Dec \' 21',
+      ED:'Present',
+      purposeList:[
+        'Develop Well Tested and formatted Smart Contracts',
+        'Work on the Ethereum Blockchain to Build over ERC721 and ERC721A',
+        'Integrate the contracts with the backend using ethers'
+      ]
+    }
+  ]
+
+export { header, about, projects, skills, contact,Experiences }
