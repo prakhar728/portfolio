@@ -21,8 +21,8 @@ const App = () => {
         <About />
         <Projects />
         <Skills />
-        <Contact />
         <Experience />
+        <Contact />
       </main>
 
       <ScrollToTop />
