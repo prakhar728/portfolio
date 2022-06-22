@@ -14,6 +14,7 @@ const about = {
   social: {
     linkedin: 'https://www.linkedin.com/in/prakhar-ojha/',
     github: 'https://github.com/prakhar728',
+    leetcode:'https://leetcode.com/prakhar427/'
   },
 }
 
@@ -85,7 +86,7 @@ const Experiences =
       Title:'Blockchain Intern',
       CName:'GetStan Tech Pvt Ltd',
       SD:'Dec \' 21',
-      ED:'Present',
+      ED:'Pres',
       purposeList:[
         'Develop Well Tested and formatted Smart Contracts',
         'Work on the Ethereum Blockchain to Build over ERC721 and ERC721A',

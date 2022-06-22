@@ -3,11 +3,18 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    width:30vw;
+    min-width:30vw;
+    width:50%;
     row-gap: 30px;
     box-shadow: var(--shadow);
     transition: transform 0.2s linear;
   padding: 2em;
+  border:1px solid black;
+}
+@media only screen and (max-width:650px) {
+    .cardWrapper{
+        width:95vw;
+    }
 }
 .cardWrapper:hover {
     transform: translateY(-7px);
@@ -21,16 +28,18 @@
     align-items: center;
     justify-content: space-between;
     width:100%;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 .jobDates{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between  ;
+    font-size: 0.8rem;
 }
 .purpose{
     width:100%;
+    font-size:0.8rem;
 }
 .purpose ul{
         width:95%;

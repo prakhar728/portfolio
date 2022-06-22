@@ -1,4 +1,5 @@
 import React, { useEffect} from 'react'
+import uniqueid from 'uniqid';
 import { Experiences } from '../../portfolio';
 import ExperienceCard from '../ExperienceCard/ExperienceCard';
 import './Experience.css';
@@ -15,23 +16,33 @@ const Experience = () => {
         <div className='exprienceStart'>
           &nbsp;
         </div>
-        {/* THIS WILL BE MAPPED */}
+              
+
+         {/* THIS WILL BE MAPPED */}
         {Experiences.map((exp,key)=>(
-          key%2===0?(<div className='experienceCardHolderRight' id='goRight'>
-          <div className='cardLine'>
-               <div className='lineWrapper'><hr /></div>
-              </div>
-          <div>
-            <ExperienceCard Title={exp.Title} CName={exp.CName} SD={exp.SD} ED={exp.ED} purposeList={exp.purposeList} />
+          key%2===0?(
+            <div className='upperWrapper' key={uniqueid()}>
+            <div className='verticalLine'>
+          &nbsp;
+        </div>
+        <div className='outerCardWrapperRight'>
+          <div className='blankDiv'>
+          &nbsp;&nbsp;
           </div>
-        </div>):(
-          <div className='experienceCardHolderLeft' id='goLeft'>
-          <div className='cardLine'>
-               <div className='lineWrapper'><hr /></div>
-              </div>
-          <div>
-            <ExperienceCard Title={exp.Title} CName={exp.CName} SD={exp.SD} ED={exp.ED} purposeList={exp.purposeList} />
+          <ExperienceCard Title={exp.Title} CName={exp.CName} SD={exp.SD} ED={exp.ED} purposeList={exp.purposeList} />
+        </div>
+        </div>
+        ):(
+          <div  className='upperWrapper' key={uniqueid()}>
+            <div className='verticalLine'>
+          &nbsp;
+        </div>
+        <div className='outerCardWrapperLeft'>
+          <div className='blankDiv'>
+          &nbsp;&nbsp;
           </div>
+          <ExperienceCard Title={exp.Title} CName={exp.CName} SD={exp.SD} ED={exp.ED} purposeList={exp.purposeList} />
+        </div>
         </div>
         )
           
