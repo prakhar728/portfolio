@@ -9,8 +9,8 @@ const about = {
   name: 'Prakhar Ojha',
   role: 'Blockchain/Backend Developer',
   description:
-    'Currently a Sophomore at IIIT Surat. I plan to build a career in Blockchain Development and explore the opportunities in the field. ',
-  resume: 'https://drive.google.com/file/d/1HqVcXZegvMoT9qsvvkrUOhBN2bxubho7/view?usp=sharing',
+    'Hi, I am Prakhar Ojha, an undergrad at IIIT Surat. I have a keen interest in learning about Backend, Blockchain, and Open Source as well as distributed systems. I am often working on projects, collaborating in hackathons, or solving some questions on leetcode.',
+  resume: 'https://www.canva.com/design/DAErr6jyelU/waoUbdMDcc9KBiX1lDPBHw/view?utm_content=DAErr6jyelU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton',
   social: {
     linkedin: 'https://www.linkedin.com/in/prakhar-ojha/',
     github: 'https://github.com/prakhar728',
