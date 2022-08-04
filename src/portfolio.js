@@ -19,7 +19,14 @@ const about = {
 }
 
 const projects = [
- 
+  {
+    name: 'College Name Service',
+    description:
+      'Register your very own .IIIT Domains on top of the Polygon Blockchain!',
+    stack: ['ReactJs', 'Solidity','Javascript'],
+    sourceCode: 'https://github.com/prakhar728/College_Name_Service',
+    livePreview: 'https://cnsme.netlify.app/',
+  }, 
   {
     name: 'Daan',
     description:
@@ -43,7 +50,7 @@ const projects = [
     stack: ['SASS', 'TypeScript', 'React'],
     sourceCode: 'https://github.com/prakhar728/CerTube_Yoflake',
     livePreview: 'https://devpost.com/software/certube',
-  },
+  }
 ]
 
 const skills = [
