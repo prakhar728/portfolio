@@ -332,10 +332,24 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 80%;
   margin: 0 auto;
   position: relative;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto ;
+  column-gap: 8px;
+  row-gap: 8px;
+}
+.item{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+  padding:2px 4px;
+  border-radius: 16px;
 }
 .skill-slider .item img {
-  width: 50%;
+  width: 60%;
   margin: 0 auto 15px auto;
+  padding: 0px 2px;
 }
 .background-image-left {
   top: 28%;
@@ -344,7 +358,74 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 40%;
   z-index: -4;
 }
+.glimmer {
+  position: relative;
+  overflow: hidden;
+}
 
+.glimmer::after {
+  content: "";
+  position: absolute;
+  top: -110%;
+  left: -210%;
+  width: 200%;
+  height: 200%;
+  opacity: 0;
+  transform: rotate(30deg);
+  
+  background: rgba(255, 255, 255, 0.13);
+  background: linear-gradient(
+    to right, 
+    rgba(255, 255, 255, 0.13) 0%,
+    rgba(255, 255, 255, 0.13) 77%,
+    rgba(255, 255, 255, 0.5) 92%,
+    rgba(255, 255, 255, 0.0) 100%
+  );
+}
+
+.glimmer:hover:after {
+  opacity: 1;
+  top: -30%;
+  left: -30%;
+  transition-property: left, top, opacity;
+  transition-duration: 0.7s, 0.7s, 0.15s;
+  transition-timing-function: ease;
+}
+.glimmer:active:after {
+  opacity: 0;
+}
+@media only screen and (max-width: 1162px){
+  .skill-slider{
+   grid-template-columns: auto auto auto ;
+    
+  }
+}
+@media only screen and (max-width: 768px){
+  /* .skill-slider{
+    grid-template-columns: auto auto;
+  } */
+  .skill-slider{
+    width:60vw;
+    height:20vh;
+    overflow-x: scroll;
+    display: block;
+  }
+  .item{
+    width: 50vw;
+    height: 20vh;
+    display: inline-flex;
+    flex-direction: column;
+    }
+  .item img{
+    width: 55vw;
+    height: 13vh;
+  }
+  .skill-slider .item img {
+    width: 60%;
+    margin: 0 auto 15px auto;
+    padding: 0px 2px;
+  }
+}
 /************ Projects Css ************/
 .project {
   padding: 80px 0;
