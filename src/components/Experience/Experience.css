@@ -1,0 +1,50 @@
+.experienceWrapper{
+    min-height:60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.exprienceStart{
+    width: 80px;
+    height:2px;
+    background-color: black;
+}
+.outerCardWrapperLeft{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.verticalLine{
+    width:0.2px;
+    background-color: black;
+    height:4vh;
+}
+.blankDiv{
+    width:50%;
+}
+.outerCardWrapperRight{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-flow: row-reverse;
+}
+.upperWrapper{
+    width: 100%;
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@media only screen and (max-width:650px) {
+    .blankDiv{
+        display: none;
+    }
+    .outerCardWrapperLeft,.outerCardWrapperRight{
+        justify-content: center;
+    }
+}
+
+
+
+
+
