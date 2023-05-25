@@ -1,8 +1,11 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
+import projImg1 from "../assets/img/projects/P1_i1.jpg";
+import projImg2 from "../assets/img/projects/P2_i2.jpg";
+import projImg3 from "../assets/img/projects/P3.jpg";
+import projImg4 from "../assets/img/projects/P4.jpg";
+import projImg5 from "../assets/img/projects/P5.jpg";
+import projImg6 from "../assets/img/projects/P6.jpg";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -11,34 +14,56 @@ export const Projects = () => {
 
   const projects = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Training and Placement Website",
+      description: "Easing the way for companies to hire on-campus",
       imgUrl: projImg1,
+      tags:['React.js','Node.js','MongoDB'],
+      link:"https://github.com/prakhar728/TNP",
+      type:"FS"
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "CrimeAwarenessBot",
+      description: "This is a User Friendly CrimeAwareness Bot to report crimes by witnesses",
       imgUrl: projImg2,
+      tags:['Node.js','Postman API','Nodemailer'],
+      link:"https://devfolio.co/projects/crimeawarenessbot-bc4a",
+      type:"FS"
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Stream You",
+      description: "Decentralized Content Creators' platform",
       imgUrl: projImg3,
+      tags:['Next.js','Typescript','Solidity'],
+      link:"https://devfolio.co/projects/streamyou-392f ",
+      type:"W3"
+
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
+      title: "ZAPP NFT",
+      description: "Lending and Borrowing made easy, with NFTs as collateral",
+      imgUrl: projImg4,
+      tags:['Next.js','Node.js','Solidity'],
+      link:"https://devfolio.co/projects/zapp-0819",
+      type:"W3"
+
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
+      title: "Daan",
+      description: "A social goods fundraising platform",
+      imgUrl: projImg5,
+      tags:["React.js","Node.js","Polygon"],
+      link:"https://devfolio.co/projects/daan-cff2",
+      type:"W3"
+      
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
+      title: "CrerTube",
+      description: "SSIP FUNDED CURRENT STARTUP",
+      imgUrl: projImg6,
+      tags:["React Native","Nest.js","Cassandra"],
+      link:"#",
+      type:"FS"
+
     },
   ];
 
@@ -51,22 +76,22 @@ export const Projects = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
                 <h2>Projects</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <p>Welcome to the showcase of my creative endeavors, where you can immerse yourself in a collection of captivating projects that highlight my expertise and dedication to delivering impactful solutions.</p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
-                      <Nav.Link eventKey="first">Tab 1</Nav.Link>
+                      <Nav.Link eventKey="first">All Projects</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="second">Tab 2</Nav.Link>
+                      <Nav.Link eventKey="second">Web3</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="third">Tab 3</Nav.Link>
+                      <Nav.Link eventKey="third">Full Stack</Nav.Link>
                     </Nav.Item>
                   </Nav>
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                     <Tab.Pane eventKey="first">
-                      <Row>
+                      <Row size={8}>
                         {
                           projects.map((project, index) => {
                             return (
@@ -79,11 +104,35 @@ export const Projects = () => {
                         }
                       </Row>
                     </Tab.Pane>
-                    <Tab.Pane eventKey="section">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                    <Tab.Pane eventKey="second">
+                    <Row size={8}>
+                        {
+                          projects.map((project, index) => {
+                            if(project.type==="W3")
+                            return (
+                              <ProjectCard
+                                key={index}
+                                {...project}
+                                />
+                            )
+                          })
+                        }
+                      </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                    <Row size={8}>
+                        {
+                          projects.map((project, index) => {
+                            if(project.type==="FS")
+                            {return (
+                              <ProjectCard
+                                key={index}
+                                {...project}
+                                />
+                            )}
+                          })
+                        }
+                      </Row>
                     </Tab.Pane>
                   </Tab.Content>
                 </Tab.Container>

@@ -407,8 +407,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   .skill-slider{
     width:60vw;
     height:20vh;
-    overflow-x: scroll;
     display: block;
+    overflow-x: auto;
   }
   .item{
     width: 50vw;
@@ -419,9 +419,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   .item img{
     width: 55vw;
     height: 13vh;
-  }
-  .skill-slider .item img {
-    width: 60%;
+    display:inline-block;
     margin: 0 auto 15px auto;
     padding: 0px 2px;
   }
@@ -543,6 +541,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-size: 15px;
   letter-spacing: 0.8px;
 }
+.proj-txtx a {
+  cursor: pointer;
+  color:#fff;
+  text-decoration: none;
+
+}
+.proj-txtx a:hover {
+  text-decoration: underline;
+  color:#fff;
+
+}
 .background-image-right {
   top: 20%;
   position: absolute;
@@ -551,7 +560,21 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   right: 0;
   z-index: -4;
 }
+.tagHolder{
 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.languageTag{
+  border:2px solid rgb(128, 128, 128);
+  width: fit-content;
+  padding:2px;  
+  margin-top: 1vh;
+  margin:0 4px;
+}
 /************ Projects Css ************/
 .contact {
   background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
@@ -624,6 +647,39 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 100%;
 }
 
+.contactButton{
+  font-weight: 700;
+  color: #000;
+  background-color: #fff;
+  padding: 14px 48px;
+  font-size: 18px;
+  margin-top: 25px;
+  border-radius: 0;
+  position: relative;
+  transition: 0.3s ease-in-out;
+  text-decoration: none;
+}
+.contactButton span {
+  z-index: 1;
+  position: relative;
+}
+.contactButton:hover {
+  color: #fff;
+}
+.contactButton::before {
+  content: "";
+  background: #121212;
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  transition: 0.3s ease-in-out;
+}
+.contactButton:hover::before {
+  width: 100%;
+}
 /************ Footer Css ************/
 .footer {
   padding: 0 0 50px 0;

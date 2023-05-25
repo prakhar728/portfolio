@@ -2,6 +2,8 @@ import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import contactImg from "../assets/img/contact-img.svg";
 import 'animate.css';
+import Lottie from "lottie-react";
+import ContactAnimation from "../assets/img/contact.json";
 import TrackVisibility from 'react-on-screen';
 
 export const Contact = () => {
@@ -50,7 +52,8 @@ export const Contact = () => {
           <Col size={12} md={6}>
             <TrackVisibility>
               {({ isVisible }) =>
-                <img className={isVisible ? "animate__animated animate__zoomIn" : ""} src={contactImg} alt="Contact Us"/>
+                // <img className={isVisible ? "animate__animated animate__zoomIn" : ""} src={contactImg} alt="Contact Us"/>
+                <Lottie animationData={ContactAnimation} loop={true} />
               }
             </TrackVisibility>
           </Col>
@@ -59,7 +62,7 @@ export const Contact = () => {
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <h2>Get In Touch</h2>
-                <form onSubmit={handleSubmit}>
+                {/* <form onSubmit={handleSubmit}>
                   <Row>
                     <Col size={12} sm={6} className="px-1">
                       <input type="text" value={formDetails.firstName} placeholder="First Name" onChange={(e) => onFormUpdate('firstName', e.target.value)} />
@@ -84,7 +87,8 @@ export const Contact = () => {
                       </Col>
                     }
                   </Row>
-                </form>
+                </form> */}
+                <a className="contactButton" href="mailto:prakharojha12@gmail.com"><span>Connect</span> </a>
               </div>}
             </TrackVisibility>
           </Col>
