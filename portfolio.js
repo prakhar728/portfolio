@@ -20,6 +20,14 @@ const about = {
 
 const projects = [
   {
+    name: 'JournaLink',
+    description:
+      'A data DAO for news enthusiasts that incentivizes their enthusiasm.',
+    stack: ['Next.js', 'Solidity','Typescript'],
+    sourceCode: 'https://github.com/prakhar728/JournaLink',
+    livePreview: 'https://ethglobal.com/showcase/journalink-ix7qs',
+  },
+  {
     name: 'College Name Service',
     description:
       'Register your very own .IIIT Domains on top of the Polygon Blockchain!',
