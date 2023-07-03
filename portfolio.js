@@ -20,6 +20,14 @@ const about = {
 
 const projects = [
   {
+    name: 'MediBridge',
+    description:
+      'Empowering Healthcare Through Secure Decentralization.',
+    stack: ['React.js', 'Rust','Typescript','Near Blockchain'],
+    sourceCode: 'https://devpost.com/software/medibridge-7ky93d',
+    livePreview: 'https://medibridge.vercel.app/',
+  },
+  {
     name: 'JournaLink',
     description:
       'A data DAO for news enthusiasts that incentivizes their enthusiasm.',
