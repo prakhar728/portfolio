@@ -2,4 +2,4 @@
 
 1. Run `npm install`
 2. Run `npm start`
-3. Local Server on PORT 3000.
+3. Local Server on PORT 3000 or as specified by the .env file.

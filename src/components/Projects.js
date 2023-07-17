@@ -14,6 +14,22 @@ export const Projects = () => {
 
   const projects = [
     {
+      title: "MediBridge",
+      description: "Empowering Healthcare Through Secure Decentralization.",
+      imgUrl: projImg1,
+      tags:['React.js', 'Rust','Typescript','Near Blockchain'],
+      link:"https://devpost.com/software/medibridge-7ky93d",
+      type:"W3"
+    },
+    {
+      title: "JournaLink",
+      description: "A data DAO for news enthusiasts that incentivizes their enthusiasm.",
+      imgUrl: projImg1,
+      tags:['Next.js', 'Solidity','Typescript'],
+      link:"https://ethglobal.com/showcase/journalink-ix7qs",
+      type:"W3"
+    },
+    {
       title: "Training and Placement Website",
       description: "Easing the way for companies to hire on-campus",
       imgUrl: projImg1,
