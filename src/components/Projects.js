@@ -1,6 +1,6 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/projects/P1_i1.jpg";
+import projImg1 from "../assets/img/projects/MediBridge.png";
 import projImg2 from "../assets/img/projects/P2_i2.jpg";
 import projImg3 from "../assets/img/projects/P3.jpg";
 import projImg4 from "../assets/img/projects/P4.jpg";
