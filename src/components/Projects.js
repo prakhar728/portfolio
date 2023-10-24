@@ -1,6 +1,7 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/projects/MediBridge.png";
+import projImg2N from "../assets/img/projects/proj2N.png";
 import projImg2 from "../assets/img/projects/P2_i2.jpg";
 import projImg3 from "../assets/img/projects/P3.jpg";
 import projImg4 from "../assets/img/projects/P4.jpg";
@@ -24,7 +25,7 @@ export const Projects = () => {
     {
       title: "JournaLink",
       description: "A data DAO for news enthusiasts that incentivizes their enthusiasm.",
-      imgUrl: projImg1,
+      imgUrl: projImg2N,
       tags:['Next.js', 'Solidity','Typescript'],
       link:"https://ethglobal.com/showcase/journalink-ix7qs",
       type:"W3"
